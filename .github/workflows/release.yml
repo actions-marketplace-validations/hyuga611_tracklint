@@ -33,7 +33,7 @@ jobs:
       matrix:
         node: ['20.x', '22.x', '24.x']
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node }}
@@ -71,7 +71,7 @@ jobs:
       contents: write   # to create the GitHub release
       id-token: write   # to sign the provenance attestation
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7
         with:
           node-version: '22.x'
